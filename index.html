@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean There</title>
+    <link rel="icon" type="image/svg+xml" href="coffee-icon.svg">
+    <link rel="preload" as="image" href="images/homepage-slide-01.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header>
+            <a class="logo" href="./index.html#home" aria-label="Bean There home">
+                <img src="BH_Logo.png" alt="Bean There">
+                <div class="logo-copy">
+                    <h1>Bean There</h1>
+                    <p>COFFEE GUIDE • EST. 2026</p>
+                </div>
+            </a>
+
+            <nav>
+                <a href="why-coffee.html">Why Coffee?</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </header>
+
+        <main id="home" class="hero">
+
+            <div class="hero-slideshow">
+                <img class="slide active" fetchpriority="high" src="images/homepage-slide-01.jpg" alt="">
+                <img class="slide" src="images/homepage-slide-02.jpg" alt="">
+                <img class="slide" src="images/homepage-slide-03.jpg" alt="">
+                <img class="slide" src="images/homepage-slide-04.jpg" alt="">
+                <img class="slide" src="images/homepage-slide-05.jpg" alt="">
+                <img class="slide" src="images/homepage-slide-06.jpg" alt="">
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="small-title">WELCOME TO BEAN THERE</p>
+
+                <h2>
+                    Discover coffee,<br>
+                    <em>one bean at a time.</em>
+                </h2>
+
+                <p class="description">
+                    Explore coffee drinks, learn about famous coffee beans,
+                    and discover flavors from different parts of the world.
+                </p>
+
+            </div>
+
+        </main>
+
+        <section class="features" role="tablist" aria-label="Coffee information">
+            <button class="feature-tab" id="coffee-menu-tab" type="button" role="tab" aria-selected="false" aria-controls="coffee-menu-panel" tabindex="0">
+                <h3>COFFEE MENU</h3>
+                <p>Explore different coffee drinks</p>
+            </button>
+            <button class="feature-tab" id="coffee-guide-tab" type="button" role="tab" aria-selected="false" aria-controls="coffee-guide-panel" tabindex="-1">
+                <h3>COFFEE GUIDE</h3>
+                <p>Learn about flavors and beans</p>
+            </button>
+            <button class="feature-tab" id="coffee-map-tab" type="button" role="tab" aria-selected="false" aria-controls="coffee-map-panel" tabindex="-1">
+                <h3>COFFEE MAP</h3>
+                <p>Discover coffee from around the world</p>
+            </button>
+            <button class="feature-tab" id="recommendations-tab" type="button" role="tab" aria-selected="false" aria-controls="recommendations-panel" tabindex="-1">
+                <h3>RECOMMENDATIONS</h3>
+                <p>Find coffee based on your taste</p>
+            </button>
+        </section>
+
+        <div class="feature-panel-wrap" id="feature-panel-wrap">
+            <div class="feature-panel-inner">
+                <section class="feature-panel" id="coffee-menu-panel" role="tabpanel" aria-labelledby="coffee-menu-tab" hidden>
+                    <div class="coffee-menu-intro">
+                        <p class="feature-panel-eyebrow">COFFEE MENU</p>
+                        <h2>Explore our Coffee Menu</h2>
+                        <p>Every drink has its own personality. Some are bold and strong, while others are smooth, sweet, and refreshing. Discover popular coffee drinks and what makes each one unique.</p>
+                    </div>
+                    <div class="coffee-menu-grid">
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--espresso" src="images/espresso.jpg" alt="Freshly ground coffee beans beside a small espresso cup" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Espresso</h3>
+                                <p class="coffee-card-description">A concentrated coffee made by forcing hot water through finely ground beans under pressure. It is the base of many coffee drinks.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Finely ground beans and hot water</dd></div>
+                                    <div><dt>Temperature</dt><dd>Hot</dd></div>
+                                    <div><dt>Taste</dt><dd>Rich, intense, and bitter</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Very strong</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--americano" src="images/americano.jpg" alt="Black Americano coffee in a ceramic cup" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Americano</h3>
+                                <p class="coffee-card-description">Espresso with added hot water. It looks like regular black coffee while keeping espresso's distinct flavor.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Espresso and hot water</dd></div>
+                                    <div><dt>Temperature</dt><dd>Hot</dd></div>
+                                    <div><dt>Taste</dt><dd>Smooth, rich, and slightly bitter</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Strong</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--latte" src="images/latte.jpg" alt="Steamed milk being poured into a latte" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Latte</h3>
+                                <p class="coffee-card-description">An espresso-based drink with steamed milk and a thin layer of milk foam, popular with people who enjoy creamy coffee.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Espresso, steamed milk, milk foam</dd></div>
+                                    <div><dt>Temperature</dt><dd>Hot or cold</dd></div>
+                                    <div><dt>Taste</dt><dd>Creamy, milky, smooth, and mildly sweet</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Medium</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--cappuccino" src="images/cappuccino.jpg" alt="Cappuccino with flower-shaped latte art on a saucer" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Cappuccino</h3>
+                                <p class="coffee-card-description">Espresso with steamed milk and a thick layer of milk foam. It has a more noticeable coffee flavor than a latte.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Espresso, steamed milk, milk foam</dd></div>
+                                    <div><dt>Temperature</dt><dd>Hot</dd></div>
+                                    <div><dt>Taste</dt><dd>Creamy, rich, and balanced with a noticeable coffee flavor</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--mocha" src="images/mocha.jpg" alt="Layered chocolate mocha topped with whipped cream and chocolate" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Mocha</h3>
+                                <p class="coffee-card-description">A chocolate-flavored coffee that combines espresso, steamed milk, and chocolate ideal for coffee and chocolate lovers.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Espresso, steamed milk, chocolate/cocoa</dd></div>
+                                    <div><dt>Temperature</dt><dd>Hot or cold</dd></div>
+                                    <div><dt>Taste</dt><dd>Sweet, chocolatey, creamy, and slightly bitter</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Medium</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                        <article class="coffee-card">
+                            <img class="coffee-photo coffee-photo--iced" src="images/iced-coffee.jpg" alt="Iced coffee with milk swirling in the glass" decoding="async">
+                            <div class="coffee-card-content">
+                                <h3>Iced Coffee</h3>
+                                <p class="coffee-card-description">Brewed coffee served cold over ice. Add milk, sugar, or flavored syrup to suit your preference.</p>
+                                <dl>
+                                    <div class="detail-ingredients"><dt>Ingredients</dt><dd>Brewed coffee, ice, milk/sweetener</dd></div>
+                                    <div><dt>Temperature</dt><dd>Cold</dd></div>
+                                    <div><dt>Taste</dt><dd>Refreshing and smooth; slightly bitter to sweet</dd></div>
+                                    <div class="detail-strength"><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="coffee-menu-note"><strong>Note:</strong> Coffee strength describes perceived intensity, not exact caffeine. Iced coffee strength depends on preparation. Recipes and serving sizes may vary.</p>
+                </section>
+                <section class="feature-panel" id="coffee-guide-panel" role="tabpanel" aria-labelledby="coffee-guide-tab" hidden>
+                    <div class="coffee-guide">
+                        <div class="coffee-menu-intro">
+                            <p class="feature-panel-eyebrow">COFFEE GUIDE</p>
+                            <h2>Get to Know Your Coffee</h2>
+                            <p>Coffee has different flavors, aromas, and strengths depending on the beans, where they are grown, and how they are prepared. Understanding these differences can help you discover the coffee that best matches your taste.</p>
+                        </div>
+                        <div class="coffee-guide-gallery">
+                            <figure>
+                                <img src="images/coffee-cherries.jpg" alt="Fresh coffee cherries and seeds gathered during harvest" loading="lazy" decoding="async">
+                                <figcaption><strong>From the fruit</strong><span>Coffee beans begin inside coffee cherries.</span></figcaption>
+                            </figure>
+                            <figure>
+                                <img class="coffee-guide-photo--brewing" src="images/coffee-brewing.jpg" alt="Hot water being poured through a coffee filter" loading="lazy" decoding="async">
+                                <figcaption><strong>Brewing</strong><span>Preparation helps shape the flavor in your cup.</span></figcaption>
+                            </figure>
+                            <figure>
+                                <img class="coffee-guide-photo--roasting" src="images/coffee-roasting.jpg" alt="Coffee beans roasting in a drum roaster" loading="lazy" decoding="async">
+                                <figcaption><strong>Roasting</strong><span>Heat develops the beans' aroma and character.</span></figcaption>
+                            </figure>
+                        </div>
+
+                        <section class="coffee-guide-section">
+                            <h3>What Is Coffee?</h3>
+                            <p>Coffee is a popular beverage made from roasted and ground seeds of coffee plants. These seeds, commonly called coffee beans, are found inside coffee cherries. They are harvested, processed, dried, roasted, and ground before brewing. Around the world, different preparation methods create a wide variety of flavors.</p>
+                        </section>
+
+                        <section class="coffee-guide-section">
+                            <h3>Different Types of Coffee Drinks</h3>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Coffee drink descriptions" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead><tr><th scope="col">Coffee drink</th><th scope="col">Description</th></tr></thead>
+                                    <tbody>
+                                        <tr><th scope="row">Espresso</th><td>Concentrated coffee served in small shots.</td></tr>
+                                        <tr><th scope="row">Americano</th><td>Espresso diluted with hot water.</td></tr>
+                                        <tr><th scope="row">Latte</th><td>Espresso mixed with steamed milk.</td></tr>
+                                        <tr><th scope="row">Cappuccino</th><td>Espresso with steamed milk and thick foam.</td></tr>
+                                        <tr><th scope="row">Mocha</th><td>Espresso mixed with chocolate and milk.</td></tr>
+                                        <tr><th scope="row">Iced coffee</th><td>Brewed coffee served cold over ice.</td></tr>
+                                        <tr><th scope="row">Macchiato</th><td>Espresso topped with a small amount of milk foam.</td></tr>
+                                        <tr><th scope="row">Flat white</th><td>Espresso combined with smooth, finely textured milk.</td></tr>
+                                        <tr><th scope="row">Cold brew</th><td>Coffee grounds steeped in cold or room-temperature water for several hours.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section class="coffee-guide-section">
+                            <h3>Common Coffee Flavors</h3>
+                            <p>Coffee does not always taste the same. Bean variety, origin, processing, and roasting all contribute to its flavor characteristics.</p>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Common coffee flavor descriptions" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead><tr><th scope="col">Flavor</th><th scope="col">Description</th></tr></thead>
+                                    <tbody>
+                                        <tr><th scope="row">Chocolatey</th><td>Reminiscent of cocoa, dark chocolate, or milk chocolate; often rich and comforting.</td></tr>
+                                        <tr><th scope="row">Nutty</th><td>Notes similar to almonds, peanuts, hazelnuts, or walnuts.</td></tr>
+                                        <tr><th scope="row">Fruity</th><td>Berry, apple, cherry, or other fruit-like notes.</td></tr>
+                                        <tr><th scope="row">Citrusy</th><td>Bright flavors similar to lemon, orange, or grapefruit.</td></tr>
+                                        <tr><th scope="row">Floral</th><td>Delicate aromas and flavors reminiscent of flowers.</td></tr>
+                                        <tr><th scope="row">Earthy and spicy</th><td>Deeper flavors that may suggest wood, herbs, or spices.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section class="coffee-guide-section">
+                            <h3>Coffee Strength Levels</h3>
+                            <p>Strength describes how intense coffee tastes. It can depend on the amount of coffee used, brewing method, bean type, and roast level.</p>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Coffee strength levels and examples" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead><tr><th scope="col">Level</th><th scope="col">Description</th><th scope="col">Example</th></tr></thead>
+                                    <tbody>
+                                        <tr><th scope="row">Light</th><td>Delicate, mild, and less intense.</td><td>Light-roast pour-over</td></tr>
+                                        <tr><th scope="row">Medium</th><td>Balanced coffee flavor.</td><td>Latte or Americano</td></tr>
+                                        <tr><th scope="row">Strong</th><td>Richer and more noticeable coffee taste.</td><td>Cappuccino or double Americano</td></tr>
+                                        <tr><th scope="row">Very strong</th><td>Highly concentrated and intense.</td><td>Espresso</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="coffee-menu-note"><strong>Remember:</strong> Strong-tasting coffee does not automatically contain more caffeine. Caffeine depends on factors such as bean variety, serving size, and preparation.</p>
+                        </section>
+
+                        <section class="coffee-guide-section">
+                            <h3>Difference Between Hot and Cold Coffee</h3>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Comparison of hot and cold coffee" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead><tr><th scope="col">Hot coffee</th><th scope="col">Cold coffee (iced coffee)</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Served warm or hot.</td><td>Served chilled or over ice.</td></tr>
+                                        <tr><td>Often has a comforting aroma.</td><td>Often refreshing and easy to customize.</td></tr>
+                                        <tr><td>Examples: espresso, cappuccino, and hot latte.</td><td>Examples: iced coffee, iced latte, and cold brew.</td></tr>
+                                        <tr><td>For people who enjoy warm beverages.</td><td>For people who prefer refreshing drinks.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="coffee-menu-note"><strong>Remember:</strong> The main difference is serving temperature and preparation method. Some coffee drinks can be made in both hot and cold versions.</p>
+                        </section>
+
+                        <section class="coffee-guide-section">
+                            <h3>What Affects the Taste of Coffee?</h3>
+                            <p>Three important factors help determine the taste of coffee:</p>
+                            <div class="coffee-guide-factors">
+                                <article>
+                                    <figure class="coffee-factor-visual">
+                                        <img class="coffee-factor-image" src="images/guide-bean-types.jpg" alt="Roasted coffee beans showing variation in color and shape" loading="lazy" decoding="async">
+                                        <figcaption><h4>1. Type of Coffee Bean</h4></figcaption>
+                                    </figure>
+                                    <p>Different coffee species have different natural characteristics. Some are known for smooth, sweet flavors, while others are stronger, more bitter, and more intense.</p>
+                                </article>
+                                <article>
+                                    <figure class="coffee-factor-visual">
+                                        <img class="coffee-factor-image" src="images/guide-coffee-origin.jpg" alt="Coffee grower inspecting coffee plants at a farm" loading="lazy" decoding="async">
+                                        <figcaption><h4>2. Country or Region of Origin</h4></figcaption>
+                                    </figure>
+                                    <p>Climate, soil, altitude, rainfall, and growing conditions can all influence coffee flavor.</p>
+                                    <ul>
+                                        <li>Benguet Arabica is often associated with bright, fruity, and floral notes.</li>
+                                        <li>Batangas Liberica is known for a bold, woody, distinctive aroma.</li>
+                                        <li>Philippine Robusta is often associated with earthy and chocolatey notes.</li>
+                                    </ul>
+                                </article>
+                                <article>
+                                    <figure class="coffee-factor-visual">
+                                        <img class="coffee-factor-image" src="images/guide-coffee-roast.jpg" alt="Coffee beans turning in a roasting drum" loading="lazy" decoding="async">
+                                        <figcaption><h4>3. Roasting Level</h4></figcaption>
+                                    </figure>
+                                    <p>Roasting heats green coffee beans to develop their color, aroma, and flavor. Each level brings out different characteristics.</p>
+                                </article>
+                            </div>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Coffee roasting level comparison" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead><tr><th scope="col">Light roast</th><th scope="col">Medium roast</th><th scope="col">Dark roast</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Light brown color.</td><td>Medium brown color.</td><td>Dark brown color.</td></tr>
+                                        <tr><td>Often highlights fruity and floral flavors.</td><td>Balanced flavor and aroma.</td><td>Often bold, smoky, and bittersweet.</td></tr>
+                                        <tr><td>Usually has brighter acidity.</td><td>May have caramel, nutty, and chocolate notes.</td><td>Can have a heavier roasted taste.</td></tr>
+                                        <tr><td>Preserves more of the bean's origin characteristics.</td><td>Most popular choice for everyday coffee.</td><td>Origin characteristics may become less noticeable.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="coffee-guide-subheading">Arabica vs. Robusta</h4>
+                            <div class="coffee-guide-table-scroll" role="region" aria-label="Arabica and Robusta comparison" tabindex="0">
+                                <table class="coffee-guide-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <img class="coffee-variety-photo coffee-variety-photo--arabica" src="images/arabica-beans.jpg" alt="Basket of roasted Arabica coffee beans" loading="lazy" decoding="async">
+                                                <span>Arabica (Coffea arabica)</span>
+                                            </th>
+                                            <th scope="col">
+                                                <img class="coffee-variety-photo" src="images/robusta-beans.jpg" alt="Close-up of roasted coffee beans representing Robusta" loading="lazy" decoding="async">
+                                                <span>Robusta (Coffea canephora)</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Usually smoother and more aromatic.</td><td>Usually stronger and more intense.</td></tr>
+                                        <tr><td>Often fruity, floral, and sweet.</td><td>Often earthy, woody, and bitter.</td></tr>
+                                        <tr><td>Generally has less caffeine.</td><td>Generally contains more caffeine.</td></tr>
+                                        <tr><td>Often grown at higher altitudes.</td><td>Can grow in warmer, lower-altitude areas.</td></tr>
+                                        <tr><td>Common in specialty coffee.</td><td>Common in instant coffee and espresso blends.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h4 class="coffee-guide-subheading">Which One Should You Try?</h4>
+                            <div class="coffee-guide-choice-grid">
+                                <p><strong>Choose Arabica</strong> if you enjoy smoother, sweeter, and more complex flavors.</p>
+                                <p><strong>Choose Robusta</strong> if you prefer stronger, bolder, and more intense coffee.</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="feature-panel" id="coffee-map-panel" role="tabpanel" aria-labelledby="coffee-map-tab" hidden>
+                    <div class="coffee-menu-intro philippine-coffee-intro">
+                        <p class="feature-panel-eyebrow">PHILIPPINE COFFEE MAP</p>
+                        <h2>Discover Philippine Coffee!</h2>
+                        <p>The Philippines is one of the few countries that produces all four commercially recognized coffee species: Arabica, Robusta, Liberica, and Excelsa.</p>
+                        <p class="coffee-map-caveat">Locations are documented coffee-growing areas. Flavor descriptions are general and may vary by farm, variety, processing, and roast. Photos are representative coffee imagery, not location-specific farm photos.</p>
+                    </div>
+
+                    <div class="philippine-coffee-map">
+                        <div class="coffee-map-visual-column">
+                            <div class="philippine-map-canvas">
+                                <div class="philippine-map-content">
+                                <svg class="philippine-map-art" viewBox="0 0 400 650" role="img" aria-label="Illustrative Philippine map with Luzon, the Visayas, Mindanao, and coffee-growing areas">
+                                    <g class="philippine-map-islands">
+                                        <path d="m230 14 5 2-1 5-5-2Z"/>
+                                        <path d="m241 23 4 2-1 5-4-2Z"/>
+                                        <path d="m223 30 4 2-1 4-4-2Z"/>
+                                        <path d="M216 36 231 42 239 55 232 68 241 81 235 95 245 107 236 121 242 134 231 148 239 161 228 174 237 188 230 203 242 216 257 222 270 236 264 247 249 244 239 233 230 236 220 229 212 235 203 229 207 215 218 205 214 191 222 178 215 166 223 151 215 139 223 125 214 112 222 98 213 86 220 72 211 59Z"/>
+                                        <path d="m157 338 14 3 8 12-6 13-13 3-10-10Z"/>
+                                        <path d="m180 351 8-7 8 8-4 14-8 4-6-8Z"/>
+                                        <path d="m193 345 6-14 8 5-2 17-7 5Z"/>
+                                        <path d="m206 355 12-7 10 5 1 11-13 6-10-5Z"/>
+                                        <path d="m230 338 8-7 7 6-4 12-8 3Z"/>
+                                        <path d="m238 359 9-4 7 8-3 11-10-1Z"/>
+                                        <path d="m215 390 15-6 13 7 13-4 16 11 8 17-7 15-14 8-5 18-16 13-15-4-10 10-13-8-12-2-4-14-13-7-1-15 10-8-3-15 11-11 0-14Z"/>
+                                        <path d="m201 468 9 2 4 10-8 4-7-6Z"/>
+                                        <path d="m235 493 7 4-2 8-7-2Z"/>
+                                        <path d="m192 526 4 3-2 7-5-2Z"/>
+                                        <path d="m182 548 5 3-2 7-5-2Z"/>
+                                        <path d="m176 570 4 3-2 6-5-2Z"/>
+                                        <path d="m168 591 5 2-1 6-5-1Z"/>
+                                        <path d="m148 211 5 3-2 5-5-2Z"/>
+                                        <path d="m245 279 4 2-1 5-4-2Z"/>
+                                        <path d="m224 300 4 2-1 4-4-2Z"/>
+                                        <path d="m191 310 4 2-1 4-4-2Z"/>
+                                        <path d="m168 322 5 2-2 6-5-2Z"/>
+                                        <path d="m250 321 5 2-1 6-5-2Z"/>
+                                        <path d="m266 330 4 2-1 5-4-2Z"/>
+                                        <path d="m184 382 4 2-2 5-4-2Z"/>
+                                        <path d="m270 483 4 2-1 5-4-2Z"/>
+                                    </g>
+                                    <g class="philippine-map-labels" aria-hidden="true">
+                                        <path d="M245 181h31M170 358H88M270 438h18"/>
+                                        <text x="281" y="185">LUZON</text>
+                                        <text x="22" y="362">VISAYAS</text>
+                                        <text x="293" y="442">MINDANAO</text>
+                                    </g>
+                                </svg>
+                                <button class="coffee-map-marker" type="button" data-region="kalinga" style="--marker-x: 58%; --marker-y: 15%;" aria-label="Kalinga, Arabica and Robusta" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Kalinga</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="benguet" style="--marker-x: 54%; --marker-y: 19%;" aria-label="Benguet, Arabica" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Benguet</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="sagada" style="--marker-x: 63%; --marker-y: 22%;" aria-label="Sagada, Mountain Province, Arabica" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Sagada</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="cavite" style="--marker-x: 54%; --marker-y: 30%;" aria-label="Cavite, Liberica, Robusta, and Excelsa" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Cavite</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="batangas" style="--marker-x: 62%; --marker-y: 33%;" aria-label="Batangas, Kapeng Barako, Liberica" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Batangas</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="bukidnon" style="--marker-x: 59%; --marker-y: 68%;" aria-label="Bukidnon, Arabica and Robusta" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Bukidnon</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="sultan-kudarat" style="--marker-x: 49%; --marker-y: 71%;" aria-label="Sultan Kudarat, mainly Robusta" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Sultan Kudarat</span>
+                                </button>
+                                <button class="coffee-map-marker" type="button" data-region="davao" style="--marker-x: 66%; --marker-y: 73%;" aria-label="Davao Region, Robusta and Arabica" aria-pressed="false">
+                                    <span class="coffee-bean-icon" aria-hidden="true"></span><span class="coffee-map-tooltip" aria-hidden="true">Davao Region</span>
+                                </button>
+                                </div>
+                            </div>
+                            <p class="coffee-map-hint">Island groups are labeled for orientation. Hover over or select a bean marker to explore an approximate coffee-growing area.</p>
+                        </div>
+
+                        <div class="coffee-map-info-column">
+                            <div class="coffee-map-details" aria-live="polite" aria-atomic="true">
+                            <article class="coffee-region-empty" id="coffee-map-empty">
+                                <h3>Pick a coffee-growing region</h3>
+                                <p>Select or hover over any bean marker on the map to see its coffee varieties, growing areas, flavor profile, and more.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="batangas" hidden>
+                                <p class="coffee-region-kicker">CALABARZON</p>
+                                <h3>Batangas <span>Kapeng Barako</span></h3>
+                                <img class="coffee-region-photo" src="images/robusta-beans.jpg" alt="Close-up of roasted coffee beans" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Liberica (Kapeng Barako)</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Lipa, Ibaan, and other parts of Batangas</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Woody, smoky, earthy, and sometimes floral</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Strong to very strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Batangas is famous for Kapeng Barako, a traditional Philippine coffee known for its strong aroma and bold flavor. It is one of the most recognizable local coffee varieties.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="cavite" hidden>
+                                <p class="coffee-region-kicker">CALABARZON</p>
+                                <h3>Cavite</h3>
+                                <img class="coffee-region-photo" src="images/coffee-roasting.jpg" alt="Coffee beans roasting in a drum roaster" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Liberica, Robusta, and Excelsa</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Amadeo and Indang</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Earthy, woody, nutty, and bold, depending on the variety</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Cavite has a long coffee-growing history. Amadeo is known for its coffee heritage and local coffee festivals.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="benguet" hidden>
+                                <p class="coffee-region-kicker">CORDILLERA ADMINISTRATIVE REGION (CAR)</p>
+                                <h3>Benguet</h3>
+                                <img class="coffee-region-photo" src="images/arabica-beans.jpg" alt="Basket of roasted Arabica coffee beans" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Arabica</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Atok, Buguias, and other highland communities</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Fruity, floral, citrusy, and mildly sweet</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Light to medium</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Benguet's high elevation and cool climate suit Arabica cultivation. Its beans are appreciated for their pleasant aroma and balanced acidity.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="sagada" hidden>
+                                <p class="coffee-region-kicker">CORDILLERA ADMINISTRATIVE REGION (CAR)</p>
+                                <h3>Sagada <span>Mountain Province</span></h3>
+                                <img class="coffee-region-photo" src="images/coffee-cherries.jpg" alt="Coffee cherries and seeds gathered during harvest" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Arabica</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Sagada and nearby highland communities</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Fruity, nutty, chocolatey, and slightly acidic</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Medium</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Sagada's highland environment helps produce Arabica with a distinct aroma and balanced flavor. Coffee is closely connected to local agricultural traditions.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="kalinga" hidden>
+                                <p class="coffee-region-kicker">CORDILLERA ADMINISTRATIVE REGION (CAR)</p>
+                                <h3>Kalinga</h3>
+                                <img class="coffee-region-photo" src="images/coffee-brewing.jpg" alt="Coffee brewed using a pour-over filter" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Arabica and Robusta</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Tabuk and selected highland and lowland communities</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Nutty, chocolatey, fruity, and earthy, depending on the variety</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Kalinga farmers cultivate different coffee varieties for local growing conditions. Coffee supports farming communities and contributes to the Cordillera coffee industry.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="bukidnon" hidden>
+                                <p class="coffee-region-kicker">NORTHERN MINDANAO</p>
+                                <h3>Bukidnon</h3>
+                                <img class="coffee-region-photo" src="images/espresso.jpg" alt="A small espresso cup beside roasted coffee beans" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Arabica and Robusta</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Malaybalay, Valencia, and surrounding agricultural communities</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Chocolatey, nutty, earthy, and sometimes fruity</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Bukidnon's agricultural lands and varied elevations support coffee cultivation. It is one of Mindanao's notable coffee-producing areas.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="sultan-kudarat" hidden>
+                                <p class="coffee-region-kicker">SOCCSKSARGEN</p>
+                                <h3>Sultan Kudarat</h3>
+                                <img class="coffee-region-photo" src="images/robusta-beans.jpg" alt="Close-up of roasted coffee beans" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Mainly Robusta, with Arabica in suitable highland areas</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Selected agricultural communities, including highland areas</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Earthy, nutty, chocolatey, and bold</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Sultan Kudarat is an important coffee-producing province in Mindanao. Its Robusta production supports the coffee industry and local farmers.</p>
+                            </article>
+                            <article class="coffee-region-detail" data-region-detail="davao" hidden>
+                                <p class="coffee-region-kicker">DAVAO REGION</p>
+                                <h3>Davao Region</h3>
+                                <img class="coffee-region-photo" src="images/coffee-cherries.jpg" alt="Coffee cherries and seeds gathered during harvest" loading="lazy" decoding="async">
+                                <dl>
+                                    <div><dt>Coffee bean</dt><dd>Robusta and Arabica</dd></div>
+                                    <div><dt>Growing areas</dt><dd>Davao del Sur, Davao de Oro, and suitable highlands near Mount Apo</dd></div>
+                                    <div><dt>Flavor profile</dt><dd>Chocolatey, nutty, fruity, and earthy</dd></div>
+                                    <div><dt>Coffee strength</dt><dd>Medium to strong</dd></div>
+                                </dl>
+                                <p class="coffee-region-unique">Davao's varied elevations support different coffee types. The region contributes significantly to Philippine coffee production.</p>
+                            </article>
+                            </div>
+                            <p class="coffee-map-description">From the cool mountains of Benguet to the coffee farms of Mindanao, provinces produce coffee with unique characteristics. Explore the country's coffee-growing regions and discover what makes Filipino coffee special.</p>
+                        </div>
+                    </div>
+
+                    <section class="coffee-map-reference">
+                        <h3>Philippine Coffee Bean Comparison</h3>
+                        <div class="coffee-guide-table-scroll" role="region" aria-label="Philippine coffee beans by location and flavor" tabindex="0">
+                            <table class="coffee-guide-table">
+                                <thead><tr><th scope="col">Location</th><th scope="col">Coffee bean</th><th scope="col">Common flavor</th></tr></thead>
+                                <tbody>
+                                    <tr><th scope="row">Batangas</th><td>Liberica</td><td>Woody and smoky</td></tr>
+                                    <tr><th scope="row">Cavite</th><td>Liberica, Robusta, Excelsa</td><td>Earthy and nutty</td></tr>
+                                    <tr><th scope="row">Benguet</th><td>Arabica</td><td>Fruity and floral</td></tr>
+                                    <tr><th scope="row">Sagada</th><td>Arabica</td><td>Nutty and chocolatey</td></tr>
+                                    <tr><th scope="row">Kalinga</th><td>Arabica and Robusta</td><td>Fruity and earthy</td></tr>
+                                    <tr><th scope="row">Bukidnon</th><td>Arabica and Robusta</td><td>Chocolate and nuts</td></tr>
+                                    <tr><th scope="row">Sultan Kudarat</th><td>Mainly Robusta</td><td>Bold and earthy</td></tr>
+                                    <tr><th scope="row">Davao Region</th><td>Arabica and Robusta</td><td>Nutty and chocolatey</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="coffee-map-reference">
+                        <h3>The Four Philippine Coffee Beans</h3>
+                        <div class="philippine-bean-grid">
+                            <article>
+                                <img src="images/arabica-beans.jpg" alt="Roasted coffee beans labeled Arabica" loading="lazy" decoding="async">
+                                <h4>Arabica</h4>
+                                <p>Smooth taste, pleasant aroma, and fruity or floral notes.</p>
+                            </article>
+                            <article>
+                                <img src="images/robusta-beans.jpg" alt="Close-up of roasted coffee beans" loading="lazy" decoding="async">
+                                <h4>Robusta</h4>
+                                <p>Bold flavor, earthy notes, and higher caffeine content.</p>
+                            </article>
+                            <article>
+                                <img src="images/coffee-roasting.jpg" alt="Coffee beans tumbling in a roasting drum" loading="lazy" decoding="async">
+                                <h4>Liberica</h4>
+                                <p>Distinctive aroma with woody, smoky, and floral flavors.</p>
+                            </article>
+                            <article>
+                                <img src="images/coffee-cherries.jpg" alt="Fresh coffee cherries and seeds in a farmer's hands" loading="lazy" decoding="async">
+                                <h4>Excelsa</h4>
+                                <p>Fruity, tangy, and distinctive flavor, often used in coffee blends.</p>
+                            </article>
+                        </div>
+                        <p class="coffee-menu-note" role="note"><strong>Remember:</strong> The Philippines produces all four commercially recognized coffee species, although Robusta makes up the largest share of local production.</p>
+                    </section>
+                </section>
+                <section class="feature-panel" id="recommendations-panel" role="tabpanel" aria-labelledby="recommendations-tab" hidden>
+                    <div class="coffee-menu-intro recommendations-intro">
+                        <p class="feature-panel-eyebrow">RECOMMENDATIONS</p>
+                        <h2>Find Your Perfect Coffee Match!</h2>
+                        <p>Not sure what coffee to try? Everyone has different preferences. Some people enjoy sweet and creamy drinks, while others prefer bold, bitter, or fruity flavors.</p>
+                        <p>Discover your coffee match based on your preferred taste!</p>
+                    </div>
+                    <h3 class="recommendations-question">What Type of Coffee Do You Prefer?</h3>
+                    <div class="recommendation-grid">
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/cappuccino.jpg" alt="Cappuccino topped with milk foam" loading="lazy" decoding="async">
+                            <h3>Sweet</h3>
+                            <p>For people who enjoy sugary, creamy, and dessert-like flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Mocha or Caramel Latte</dd></div>
+                                <div><dt>Why it matches</dt><dd>Chocolate and caramel add sweetness to coffee, making it less bitter and more enjoyable for people with a sweet tooth.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Benguet Arabica or Bukidnon Arabica</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/espresso.jpg" alt="A small cup of espresso surrounded by coffee beans" loading="lazy" decoding="async">
+                            <h3>Strong</h3>
+                            <p>For people who prefer intense coffee flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Espresso or Double Espresso</dd></div>
+                                <div><dt>Why it matches</dt><dd>Espresso is concentrated and has a rich, intense coffee taste.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Sultan Kudarat Robusta</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/coffee-cherries.jpg" alt="Freshly harvested coffee cherries and seeds" loading="lazy" decoding="async">
+                            <h3>Fruity</h3>
+                            <p>For people who enjoy bright, refreshing, and fruit-like flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Light Roast Pour-Over</dd></div>
+                                <div><dt>Why it matches</dt><dd>Lightly roasted Arabica can highlight fruity and floral characteristics.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Benguet or Sagada Arabica</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/mocha.jpg" alt="Mocha topped with whipped cream and chocolate" loading="lazy" decoding="async">
+                            <h3>Chocolatey</h3>
+                            <p>For people who enjoy cocoa, chocolate, and rich flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Mocha or Chocolate Latte</dd></div>
+                                <div><dt>Why it matches</dt><dd>Chocolate syrup adds sweetness, while some locally grown coffee beans naturally have chocolate-like flavor notes.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Bukidnon Arabica or Robusta</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/latte.jpg" alt="Steamed milk being poured into a latte" loading="lazy" decoding="async">
+                            <h3>Smooth</h3>
+                            <p>For people who prefer balanced, creamy, and easy-to-drink coffee.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Latte or Flat White</dd></div>
+                                <div><dt>Why it matches</dt><dd>Steamed milk softens the coffee's intensity and creates a creamy texture.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Benguet or Sagada Arabica</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/americano.jpg" alt="Black Americano coffee in a ceramic cup" loading="lazy" decoding="async">
+                            <h3>Bitter</h3>
+                            <p>For people who enjoy less sweetness and a more noticeable roasted flavor.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Dark Roast Americano</dd></div>
+                                <div><dt>Why it matches</dt><dd>Without milk or sweeteners, the roasted coffee flavor becomes more noticeable.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Sultan Kudarat Robusta or Batangas Liberica</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/coffee-brewing.jpg" alt="Coffee being brewed with a pour-over filter" loading="lazy" decoding="async">
+                            <h3>Light</h3>
+                            <p>For people who prefer delicate and less intense coffee flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Light Roast Pour-Over</dd></div>
+                                <div><dt>Why it matches</dt><dd>Light roasting can preserve the fruity, floral, and delicate characteristics of coffee beans.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Benguet Arabica</dd></div>
+                            </dl>
+                        </article>
+                        <article class="recommendation-card">
+                            <img class="recommendation-photo" src="images/robusta-beans.jpg" alt="Close-up of roasted coffee beans" loading="lazy" decoding="async">
+                            <h3>Bold</h3>
+                            <p>For people who enjoy deep, rich, and full-bodied flavors.</p>
+                            <dl>
+                                <div><dt>Recommended coffee</dt><dd>Kapeng Barako or Dark Roast Espresso</dd></div>
+                                <div><dt>Why it matches</dt><dd>Liberica is known for its distinctive aroma and strong, bold flavor.</dd></div>
+                                <div><dt>Suggested Philippine bean</dt><dd>Batangas Liberica</dd></div>
+                            </dl>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="animation.js"></script>
+    <script src="coffee-map.js"></script>
+    <script src="page-transition.js"></script>
+
+</body>
+</html>
